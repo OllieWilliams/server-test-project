@@ -111,10 +111,8 @@ def search_for_values():
 
 
 def order_list_result(list_of_results, order_criteria, sort_direction):
-    def hinting(evaluated_dict):
-        return evaluated_dict[order_criteria]
+    list_of_results.sort(key=lambda evaluated_dict: evaluated_dict[order_criteria])
 
-    list_of_results.sort(key=hinting)
     if sort_direction == "desc":
         list_of_results.reverse()
         return list_of_results
