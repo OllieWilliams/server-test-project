@@ -84,7 +84,7 @@ def search_for_values():
             search_results = []
             for stored_dict in saved_json:
                 for key in stored_dict:
-                    if exact_text == key or exact_text == stored_dict[key]:
+                    if exact_text == key or exact_text == str(stored_dict[key]):
                         search_results.append(stored_dict)
                         break
 
