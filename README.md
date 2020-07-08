@@ -6,8 +6,9 @@ How to run application:
 2. Navigate to the extracted location on terminal.
 3. Build the container: 
 
-    docker build .
+    _docker build ._
 
-4. After container is built, run the container
-    _docker run -p 8000:8000 <container id>_
-5. _Optional:_ Access: _<serverip>:8000/_ confirming application is ready to receive HTTP requests
+4. After container is built, run the container with external port connection:
+    _docker run -p 8000:8000 *container id*_
+    
+5. _Optional:_ Access: _*serverip*:8000/_ confirming application is ready to receive HTTP requests
