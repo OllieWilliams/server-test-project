@@ -9,7 +9,7 @@ stored_value = 0
 
 @app.route('/')
 def hello():
-    return "Hello!"
+    return jsonify("Hello!")
 
 
 @app.route('/addition', methods=['GET', 'POST'])
