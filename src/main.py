@@ -64,7 +64,6 @@ def save_json():
 def load_saved_json():
     try:
         global saved_json
-        saved_json = json.loads(str(saved_raw_json))
         return jsonify(saved_json)
     except Exception as e:
         return jsonify('Error occurred due to server error: %s' % str(e)), 500
